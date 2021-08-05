@@ -1,0 +1,33 @@
+{
+  "name": "circular_buffer",
+  "version": "1.0.0",
+  "description": "TypeScript/JavaScript implementation of a circular buffer, circular queue, cyclic buffer or ring buffer. A data structure that uses a single, fixed-size buffer as if it were connected end-to-end. This structure lends itself easily to buffering data streams.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --runInBand --detectOpenHandles --verbose",
+    "test:ci": "jest --ci --runInBand --silent --coverage",
+    "build:publish": "rm -rf dist && tsc && cp -rf package.json dist && cp -rf README.md dist",
+    "tsc": "tsc",
+    "jest": "jest"
+  },
+  "author": "remigasas",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "26.0.23",
+    "jest": "27.0.4",
+    "typescript": "4.3.2",
+    "ts-jest": "27.0.3"
+  },
+  "keywords": [
+    "circular buffer",
+    "circular queue",
+    "cyclic buffer",
+    "ring buffer"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remigasas/circular_buffer.git"
+  }
+}
